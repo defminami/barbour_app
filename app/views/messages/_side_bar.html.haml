@@ -1,0 +1,29 @@
+.Chat-side
+  .Side-header
+    .Side-header__list
+      .Side-header__Title
+        Barbour
+      .Side-header__History
+        1894年創業 英国のアウトドア・ライフスタイルを体現するブランド ＜バブアー＞をchatで語ろう
+
+  .Side-second
+    .Side-second__list
+      .Side-second__User-name
+        barbour people
+      .Side-second__Iconlist
+        = link_to '#', class: "Side-second__Iconlist__Pen" do
+          = icon('fas', 'user-edit')
+          %span<>
+        = link_to '#', class: "Side-second__Iconlist__Gear" do
+          = icon('fas', 'user-cog')
+
+  .Groups
+    .youtube-container
+      %iframe#player{frameborder: "0", height:"157.5", width: "280", src: "https://www.youtube.com/embed/BfjoD4qOBTk", type: "text/html", allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture, fullscreen"}
+
+    .group
+      .group__group-Name
+        BEDALE
+      .group__group-Message
+        Horse riding
+    
