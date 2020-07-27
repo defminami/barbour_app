@@ -1,0 +1,28 @@
+.Chat-main
+  .Main-header
+    .Main-header__list
+      .Main-header__list__Groupname
+        BEAUFORT
+      .Main-header__list__Member
+        Member : barbour people
+    .Main-header__Edit
+      = link_to '#', class: "Main-header__Right-header" do
+        = icon('far', 'address-card')
+  .Messages
+    .Message
+      .Message__info
+        .Message__info__Talker
+          minami
+        .Message__info__Date
+          2020/07/26(sun)14:42:00
+      .Message__text
+        雨の日はバブアー
+
+  .Form
+    %form.new-message
+      .input-box
+        %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          = icon('far', 'image')
+          %input{type: "file", class: "input-box__image__file"}
+      %input{type: "submit", class: "submit-btn", value:"Send"}
