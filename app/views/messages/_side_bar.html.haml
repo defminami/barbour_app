@@ -4,17 +4,17 @@
       .Side-header__Title
         Barbour
       .Side-header__History
-        1894年創業 英国のアウトドア・ライフスタイルを体現するブランド ＜バブアー＞をchatで語ろう
+        1894年創業 英国のアウトドア・ライフスタイルを体現するファッションブランド ＜バブアー＞をchatで語ろう
 
   .Side-second
     .Side-second__list
       .Side-second__User-name
-        barbour people
+        = current_user.name
       .Side-second__Iconlist
         = link_to '#', class: "Side-second__Iconlist__Pen" do
           = icon('fas', 'user-edit')
           %span<>
-        = link_to '#', class: "Side-second__Iconlist__Gear" do
+        = link_to edit_user_path(current_user), class: "Side-second__Iconlist__Gear" do
           = icon('fas', 'user-cog')
 
   .Groups
