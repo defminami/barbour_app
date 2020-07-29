@@ -11,7 +11,7 @@
       .Side-second__User-name
         = current_user.name
       .Side-second__Iconlist
-        = link_to '#', class: "Side-second__Iconlist__Pen" do
+        = link_to new_group_path, class: "Side-second__Iconlist__Pen" do
           = icon('fas', 'user-edit')
           %span<>
         = link_to edit_user_path(current_user), class: "Side-second__Iconlist__Gear" do
@@ -21,9 +21,10 @@
     .youtube-container
       %iframe#player{frameborder: "0", height:"157.5", width: "280", src: "https://www.youtube.com/embed/BfjoD4qOBTk", type: "text/html", allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture, fullscreen"}
 
-    .group
-      .group__group-Name
-        BEDALE
-      .group__group-Message
-        Horse riding
-    
+    - current_user.groups.each do |group|
+      .Group
+        = link_to '#' do
+          .Group__Name
+            = group.name
+          .Group__Message
+            Horse riding
