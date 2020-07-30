@@ -3,6 +3,8 @@ h1 {
   font-size: 24px;
   font-weight: bold;
   text-align: center;
+  color: wheat;
+  text-shadow: 1px 1px 0 gray;
 }
 h2 {
   margin-bottom: 10px;
@@ -27,7 +29,7 @@ li {
   margin: 60px auto;
   padding: 40px;
   background-color: #fff;
-  border: 1px solid #ddd;
+  background-image: url("barbourpeople.png");
   border-radius: 5px;
   box-sizing: border-box;
   &__field {
@@ -43,12 +45,17 @@ li {
   }
   &__rightField {
     width: 70%;
+    font-weight: bold;
+    color: wheat;
+    text-shadow: 1px 1px 0 gray;
   }
   &__label {
     display: block;
     line-height: 50px;
     font-weight: bold;
     text-align: right;
+    color: wheat;
+    text-shadow: 1px 1px 0 gray;
   }
   &__input {
     width: 100%;
@@ -60,7 +67,7 @@ li {
     display: inline-block;
     padding: 12px 20px;
     color: #fff;
-    background-color: #38aef0;
+    background-color: rgb(14, 65, 14);
     border: 0;
   }
   &__errors {
@@ -84,9 +91,9 @@ li {
     cursor: pointer;
   }
   &__add {
-    color: #38aef0;
+    color: olive;
   }
   &__remove {
-    color: #f05050;
+    color: orange;
   }
 }

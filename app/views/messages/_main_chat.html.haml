@@ -2,27 +2,21 @@
   .Main-header
     .Main-header__list
       .Main-header__list__Groupname
-        BEAUFORT
+        = @group.name
       .Main-header__list__Member
-        Member : barbour people
+        - @group.users.each do |user|
+          = user.name
     .Main-header__Edit
-      = link_to '#', class: "Main-header__Right-header" do
+      = link_to edit_group_path(@group), class: "Main-header__Right-header" do
         = icon('far', 'address-card')
   .Messages
-    .Message
-      .Message__info
-        .Message__info__Talker
-          minami
-        .Message__info__Date
-          2020/07/26(sun)14:42:00
-      .Message__text
-        雨の日はバブアー
+    = render @messages
 
   .Form
-    %form.new-message
+    = form_with model: [@group, @message], html: {class: "Form"}, local: true do |f|
       .input-box
-        %input{type: "text", class: "input-box__text", placeholder: "type a message"}
-        %label{class: "input-box__image"}
-          = icon('far', 'image')
-          %input{type: "file", class: "input-box__image__file"}
-      %input{type: "submit", class: "submit-btn", value:"Send"}
+        = f.text_field :content, class: 'input-box__text', placeholder: 'type a message'
+        = f.label :image, class: 'input-box__image' do
+          = icon('far', 'image', class: 'Form__icon')
+          = f.file_field :image, class: 'Hidden'
+      = f.submit 'Send', class: 'submit-btn'
