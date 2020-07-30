@@ -10,12 +10,13 @@
     .Side-second__list
       .Side-second__User-name
         = current_user.name
-      .Side-second__Iconlist
-        = link_to new_group_path, class: "Side-second__Iconlist__Pen" do
-          = icon('fas', 'user-edit')
-          %span<>
-        = link_to edit_user_path(current_user), class: "Side-second__Iconlist__Gear" do
-          = icon('fas', 'user-cog')
+      %ul.Side-second__Iconlist
+        %li.Side-second__Icon
+          = link_to new_group_path, class: "Pen" do
+            = icon('fas', 'user-edit')
+        %li.Side-second__Icon
+          = link_to edit_user_path(current_user), class: "Gear" do
+            = icon('fas', 'user-cog')
 
   .Groups
     .youtube-container
@@ -23,8 +24,8 @@
 
     - current_user.groups.each do |group|
       .Group
-        = link_to '#' do
+        = link_to group_messages_path(group) do
           .Group__Name
             = group.name
           .Group__Message
-            Horse riding
+            = group.show_last_message

@@ -48,12 +48,14 @@
       color: whitesmoke;
     }
     &__Iconlist {
-      font-size: xx-large;
-      &__Pen {
+      display: flex;
+      .Pen {
         color: gold;
+        font-size: xx-large;
       }
-      &__Gear {
+      .Gear {
         color: gold;
+        font-size: xx-large;
       }
     }
   }
@@ -68,12 +70,14 @@
       bottom: 10px;
     }
     .Group {
-      color: whitesmoke;
+      text-decoration: none;
       font-weight: bold;
       &__Name {
+        color: whitesmoke;
         font-size: large;
       }
       &__Message {
+        color: whitesmoke;
         font-size: 5px;
         margin-bottom: 40px;
       }
@@ -155,7 +159,7 @@
           right: 10px;
           font-size: 25px;
           color: rgb(14, 65, 14);
-          &__file {
+          .Hidden {
             display: none;
           }
         }
