@@ -116,6 +116,7 @@
     height: calc(100vh - 190px);
     background-color: whitesmoke;
     padding: 35px 40px 0;
+    overflow: scroll;
     .Message {
       margin-bottom: 46px;
       font-weight: bold;
