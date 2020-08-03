@@ -52,3 +52,7 @@ production:
   database: barbour_app_production
   username: barbour_app
   password: <%= ENV['BARBOUR_APP_DATABASE_PASSWORD'] %>
+  
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
