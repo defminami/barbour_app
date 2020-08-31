@@ -9,7 +9,7 @@ URL: https://barbourapp.herokuapp.com
 
 趣味が同じ人たちが集まってチャット出来たら素晴らしいと思い作成致しました。
 
-## ・開発環境
+## 開発環境
 
 言語：Haml・SCSS・javascripts・Ruby・Ruby on Rails ツール: DB:Mysql サーバー：heroku
 
