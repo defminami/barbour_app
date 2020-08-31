@@ -11,10 +11,10 @@ URL: https://barbourapp.herokuapp.com
 
 ## 開発環境
 
-言語：Haml・SCSS・javascripts・Ruby・Ruby on Rails ツール: DB:Mysql サーバー：heroku
+言語：Haml・SCSS・javascripts・Ruby・Ruby on Rails ,DB:Mysql ,サーバー：heroku
 
 ## 実装機能
-チャットアプリ チャット機能全般を要しております。
+チャットアプリ  チャット機能全般を要しております。
 
 ## 作者
 
