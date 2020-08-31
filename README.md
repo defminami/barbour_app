@@ -3,15 +3,18 @@
 
 ![トップページ](barbourtop.png)
 
-## アプリ概要
+URL: https://barbourapp.herokuapp.com
 
-個人制作ですので趣味の合う人達が集まって気軽にチャットするという仮定で作っております。
+## 企画背景
 
-## 主な機能
+趣味が同じ人たちが集まってチャット出来たら素晴らしいと思い作成致しました。
 
-## ruby,ruby on rails,haml,scss,javascriptsで制作したチャットアプリです。
-1 初めての方はsign up、アカウントをお持ちの方はlog in画面でメールアドレスとパスワードを記入。
-2 グループを作成orすでにあるグループに入っていただくとすぐにチャット開始できるアプリです。
+## ・開発環境
+
+言語：Haml・SCSS・javascripts・Ruby・Ruby on Rails ツール: DB:Mysql サーバー：heroku
+
+## 実装機能
+チャットアプリ チャット機能全般を要しております。
 
 ## 作者
 
